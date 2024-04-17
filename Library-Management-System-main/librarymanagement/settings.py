@@ -26,7 +26,19 @@ SECRET_KEY = 'k(6-_4sgig$sbrccr2*0=7s)bklpiywi#_121l)s(f8)dq^^wv'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+# ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'localhost',
+    '127.0.0.1',
+    '[::1]',
+    'your_domain.com',
+    'example.com',
+    '192.168.0.1',
+    'customdomain.com',
+    'customdomain.com:8080',
+    '74.242.170.161',  # IPv4 address without quotes
+    '[::ffff:74.242.170.161]',  # IPv6 address without quotes
+]
 
 
 # Application definition

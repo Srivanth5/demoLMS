@@ -76,10 +76,10 @@ def is_student(user):
 def afterlogin_view(request):
     if is_admin(request.user):
         return render(request,'library/adminafterlogin.html')
-    else:
-
     elif(is_student(request.user)):
         return render(request,'library/studentafterlogin.html')
+    else:
+        pass
 
 
 @login_required(login_url='adminlogin')
